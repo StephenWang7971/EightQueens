@@ -22,7 +22,7 @@ public class Solutions {
                             for (int n=0;n<8;n++) {
                                 for (int o=0;o<8;o++) {
                                     for (int p=0;p<8;p++) {
-                                        Solution possible = new Solution(i,j,k,l,m,n,o,p);
+                                        Solution possible = new Solution(new Integer[]{i,j,k,l,m,n,o,p});
                                         if(possible.validate()) {
                                             possibleSolutions.add(possible);
                                         }

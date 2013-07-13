@@ -12,15 +12,8 @@ import java.util.Arrays;
 public class Solution {
     public Integer[] chess = new Integer[8];
 
-    public Solution(int i, int j, int k ,int l, int m, int n, int o, int p) {
-        chess[0] = i;
-        chess[1] = j;
-        chess[2] = k;
-        chess[3] = l;
-        chess[4] = m;
-        chess[5] = n;
-        chess[6] = o;
-        chess[7] = p;
+    public Solution(Integer[] c) {
+        chess = c;
     }
 
     public boolean validate() {
@@ -50,4 +43,5 @@ public class Solution {
         text += "\n";
         return  text;
     }
+
 }
