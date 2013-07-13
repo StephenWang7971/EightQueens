@@ -10,12 +10,9 @@ import java.util.List;
  */
 public class EightQueens {
 
-    private int [] chess = new int[] {0,1,2,3,4,5,6,7};
-
     List<Integer[]> solutions = new ArrayList<Integer[]>();
 
     public void allPossibleSolutions() {
-        Integer[] possible = new Integer[8];
 
         for (int i=0;i<8;i++) {
             for (int j=0;j<8;j++) {
@@ -26,7 +23,7 @@ public class EightQueens {
                                 for (int o=0;o<8;o++) {
                                     for (int p=0;p<8;p++) {
                                         if(!hasSame(i,j,k,l,m,n,o,p) && !hasSameDiff(i,j,k,l,m,n,o,p)) {
-                                            possible = new Integer[] {i,j,k,l,m,n,o,p};
+                                            Integer[] possible = new Integer[] {i,j,k,l,m,n,o,p};
                                             solutions.add(possible);
                                         }
                                     }
